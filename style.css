@@ -1,0 +1,269 @@
+@import 'https://fonts.googleapis.com/css?family=Fredoka+One';
+@import 'https://fonts.googleapis.com/css?family=Lato';
+@import 'https://fonts.googleapis.com/css?family=Atomic+Age';
+/**
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+              COLORS
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**/
+/**
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          MAIN ELEMENTS
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**/
+body {
+  background: #0a0a0a;
+  font-family: 'Changa One', cursive;
+}
+h1 {
+  position: relative;
+  top: -10px;
+  font-weight: 100;
+  font-size: 52px;
+  display: inline;
+  font-family: 'Fredoka One', cursive;
+}
+h1 small {
+  font-size: 12px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+/**
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          SIMON SAYS BOARD
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**/
+.simon-says {
+  width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#startBtn,
+#strictBtn,
+#resetBtn {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #ff3030;
+  color: #ff3030;
+  overflow: hidden;
+  display: inherit;
+  margin-left: 70px;
+  margin-top: -40px;
+  border: 5px solid white;
+}
+#startBtn:focus {
+  outline: none;
+}
+.light {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 3px solid #343434;
+  background: black;
+  position: absolute;
+  left: 131px;
+  top: 94px;
+}
+.light.lit {
+  background: #ff3030;
+  border: 3px solid #7a2a2a;
+}
+#strictBtn {
+  margin-left: 119px;
+  background: #128ed6;
+  color: #128ed6;
+  margin-top: -50px;
+}
+#defaultBtn,
+#animalBtn {
+  font-size: 24px;
+  padding: 15px;
+  color: white;
+  background: none;
+  position: absolute;
+  margin: 20px;
+  font-family: 'Lato', sans-serif;
+  border: none;
+}
+#defaultBtn:focus,
+#animalBtn:focus {
+  outline: none;
+}
+#defaultBtn {
+  bottom: 0;
+  right: 0;
+}
+#animalBtn {
+  bottom: 0;
+  left: 0;
+}
+.fa.fa-paw,
+.fa.fa-star {
+  font-size: 34px;
+  display: block;
+  margin-bottom: 10px;
+}
+label,
+p {
+  font-size: 15px;
+  line-height: 15px;
+  display: inherit;
+  font-family: 'Lato', sans-serif;
+}
+p {
+  min-width: 34px;
+  display: table;
+  font-size: 22px;
+  color: red;
+  margin-top: -55px;
+  margin-left: 11px;
+  font-family: 'Atomic Age', cursive;
+  background: #890e0e;
+  padding: 7px;
+  border: 3px solid #343434;
+  background: white;
+  color: black;
+}
+label {
+  margin-left: -4px;
+  font-size: 11px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.strictLbl {
+  margin-left: 90px;
+}
+.controls {
+  margin-top: 7px;
+  margin-left: 4px;
+}
+.green {
+  background: #035503;
+}
+.red {
+  background: #460101;
+}
+.yellow {
+  background: #6f6f01;
+}
+.blue {
+  background: #020244;
+}
+.step,
+.circle {
+  min-width: 200px;
+  min-height: 200px;
+  float: left;
+  border: 10px solid #0a0a0a;
+  transition: background .5s;
+}
+.step {
+  overflow: hidden;
+}
+.step:hover {
+  cursor: pointer;
+  transition: background .5s;
+}
+.circle.black {
+  background: #0a0a0a;
+  border-radius: 100%;
+  position: absolute;
+  left: 106px;
+  top: 104px;
+  text-align: center;
+  color: white;
+  line-height: 140px;
+  font-size: 50px;
+  border: 10px solid #0f0f0f;
+}
+.step.green {
+  border-bottom: 5px solid #0a0a0a;
+  border-top-left-radius: 100%;
+}
+.step.green.animal {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/4/43/Angry_elephant_ears.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.step.red {
+  border-top-right-radius: 100%;
+}
+.step.red.animal {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/d/db/Amazona_viridigenalis_-head.jpg) no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+.step.green,
+.step.red {
+  border-bottom: 5px solid #0a0a0a;
+}
+.step.yellow {
+  border-bottom-left-radius: 100%;
+  clear: left;
+}
+.animal {
+  opacity: 0.5;
+}
+.step.yellow.animal {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.step.green,
+.step.yellow {
+  border-right: 5px solid #0a0a0a;
+}
+.step.red,
+.step.blue {
+  border-left: 5px solid #0a0a0a;
+}
+.step.blue {
+  border-bottom-right-radius: 100%;
+}
+.step.blue.animal {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/7/75/PikiWiki_Israel_15217_Dolphin.JPG) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.step.yellow,
+.step.blue {
+  border-top: 5px solid #0a0a0a;
+}
+.step.disable {
+  pointer-events: none;
+}
+.green:hover,
+.green.light-up {
+  background: #5ef95e;
+  border-left: #057c05 10px solid;
+  border-bottom: 5px solid #057c05;
+}
+.red:hover,
+.red.light-up {
+  background: #ff1f1f;
+  border-right: #780707 10px solid;
+  border-bottom: 5px solid #780707;
+}
+.yellow:hover,
+.yellow.light-up {
+  background: #ffeb3b;
+  border-left: #a1a102 10px solid;
+  border-top: 5px solid #a1a102;
+}
+.blue:hover,
+.blue.light-up {
+  background: #3232e6;
+  border-right: #0e0e67 10px solid;
+  border-top: 5px solid #0e0e67;
+}
+.animal:hover,
+.animal.light-up {
+  border-color: #dadada;
+  opacity: 1;
+}

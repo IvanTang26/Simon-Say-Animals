@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simon Says Animals</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="simon-says">
+      <div class="step green disable animal"></div>
+      <div class="step red disable animal"></div>
+      <div class="step yellow disable animal"></div>
+      <div class="step blue light-up animal"></div>
+      <div class="circle black">
+        <h1>simon<small>®</small></h1>
+        <div class="controls">
+          <button id="startBtn">Start</button>
+          <label class="startLbl" for="">Start</label>
+          <span class="light"></span>
+          <button id="strictBtn">Strict</button>
+          <label class="strictLbl" for="">Strict</label>
+          <p class="stepCount">00</p>
+        </div>
+      </div>
+    </div>
+  <button id="animalBtn"><i class="fa fa-paw"></i> animal</button>
+  <button id="defaultBtn"><i class="fa fa-star"></i> default</button>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
